@@ -3,7 +3,7 @@ BRANCH=""
 SCRIPT=""
 
 # Extract Argument
-while getopts r:b:c: flag
+while getopts r:b:s: flag
 do
 	case "${flag}" in
 		r) ROOT_DIR=${OPTARG};;
