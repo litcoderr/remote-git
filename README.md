@@ -10,7 +10,7 @@ This script is for those who are sick of integrating code between local and test
 	- **.bashrc** users
 
 	```bash
-	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo 'export PATH=$PATH:'$PWD'\nalias remote-run="remote-run.bash"\nalias remote-upload="remote-upload.bash"' >> ~/.bashrc ; cd ~/ ; source ~/.bashrc
+	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo -e 'export PATH=$PATH:'$PWD'\nalias remote-run="remote-run.bash"\nalias remote-upload="remote-upload.bash"' >> ~/.bashrc ; cd ~/ ; source ~/.bashrc
 	```
 	
 	- **.zshrc** users
