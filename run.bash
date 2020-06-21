@@ -19,14 +19,15 @@ else
 	echo Root Directory: $ROOT_DIR
 	echo Branch: $BRANCH
 	echo Script: $SCRIPT
-	echo running...
-	echo --------------------------------
 
 	TOOL_DIR="${PWD}";
 	cd $ROOT_DIR
 	# git pull from remote github server
 	git pull origin $BRANCH
 	# run script
+	echo ""
+	echo RUN: $SCRIPT
+	echo --------------------------------
 	$SCRIPT
 	cd $TOOL_DIR
 fi
