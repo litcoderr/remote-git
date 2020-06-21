@@ -1,7 +1,8 @@
 # REMOTE-GIT
 > Push, Pull and Run your code on remote server in a breeze
 
-Uploading changes of your local code to running it on remote server will be done in just 2 simple commands using this!!
+## For Whom
+This script is for those who are sick of integrating code between local and test server. You will be able to upload local changes and run it on a remote server with just 2 simple commands.
 
 ## Installation
 
