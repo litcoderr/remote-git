@@ -14,9 +14,9 @@ done
 
 if [ "$ROOT_DIR" == "" ] || [ "$BRANCH" == "" ] || [ "$SCRIPT" == "" ]; then
 	echo Set Arguments
-	echo "    -r: project root diretory"
-	echo "    -b: git branch to download from"
-	echo "    -s: script to run"
+	echo "    -r: (Essential) Project root directory consisting git configuration"
+	echo "    -b: (Essential) Branch to deploy to"
+	echo "    -s: (Essential) Script to run"
 else
 	echo --------------------------------
 	echo Root Directory: $ROOT_DIR

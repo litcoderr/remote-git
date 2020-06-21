@@ -15,9 +15,10 @@ done
 
 if [ "$ROOT_DIR" == "" ] || [ "$BRANCH" == "" ]; then
 	echo Set Arguments
-	echo "    -r: project root diretory"
-	echo "    -b: git branch to upload to"
-	echo "    -c: git commit comment. default) dev: upload to test server"
+	echo "    -r: (Essential) Project root directory consisting git configuration"
+	echo "    -b: (Essential) Branch to deploy to"
+	echo "    -c: Comment for git commit. Default) 'dev: upload to test server'"
+
 else
 	echo --------------------------------
 	echo Root Directory: $ROOT_DIR
