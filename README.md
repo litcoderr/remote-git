@@ -7,12 +7,12 @@
 	- **.bashrc** users
 
 	```bash
-	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo "export PATH=$PATH:$PWD" >> ~/.bashrc ;
+	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo 'export PATH=$PATH:$PWD\nalias remote-run="remote-run.bash"\nalias remote-upload="remote-upload.bash"' >> ~/.bashrc ;
 	```
 	
 	- **.zshrc** users
 
 	```bash
-	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo "export PATH=$PATH:$PWD" >> ~/.zshrc ;
+	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo 'export PATH=$PATH:$PWD\nalias remote-run="remote-run.bash"\nalias remote-upload="remote-upload.bash"' >> ~/.zshrc ;
 	```
 
