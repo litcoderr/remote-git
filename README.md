@@ -4,7 +4,15 @@
 ## Installation
 
 1. Run following script
+	- **.bashrc** users
 
 	```bash
-		cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git
+	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git ; cd remote-git ; echo "export PATH=$PATH:$PWD" > ~/.bashrc
 	```
+	
+	- **.zshrc** users
+
+	```bash
+	cd ~/ ; git clone https://github.com/litcoderr/remote-git.git
+	```
+
