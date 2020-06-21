@@ -20,7 +20,6 @@ else
 	echo Root Directory: $ROOT_DIR
 	echo Branch: $BRANCH
 	echo Comment: $COMMENT
-	echo uploading...
 	echo --------------------------------
 
 	TOOL_DIR="${PWD}";
