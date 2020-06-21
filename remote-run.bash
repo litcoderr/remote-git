@@ -13,7 +13,10 @@ do
 done 
 
 if [ "$ROOT_DIR" == "" ] || [ "$BRANCH" == "" ] || [ "$SCRIPT" == "" ]; then
-	echo Set -r -b -s
+	echo Set Arguments
+	echo "    -r: project root diretory"
+	echo "    -b: git branch to download from"
+	echo "    -s: script to run"
 else
 	echo --------------------------------
 	echo Root Directory: $ROOT_DIR
