@@ -36,7 +36,7 @@ This script is for those who are sick of integrating code between local and test
 	remote-run -r [YOUR_PROJECT_ROOT] -b [BRANCH_NAME] -s [SCRIPT]
 	```
 	- ```-r``` : (Essential) Project root directory consisting git configuration
-	- ```-w``` : Working Directory. Default: Same as ROOT_DIR
+	- ```-w``` : Working Directory. (Relative to ROOT_DIR) Default: Same as ROOT_DIR
 	- ```-b``` : (Essential) Branch to deploy to
 	- ```-s``` : (Essential) Script to run
 

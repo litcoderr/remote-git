@@ -17,7 +17,7 @@ done
 if [ "$ROOT_DIR" == "" ] || [ "$BRANCH" == "" ] || [ "$SCRIPT" == "" ]; then
 	echo Set Arguments
 	echo "    -r: (Essential) Project root directory consisting git configuration"
-	echo "    -w: Working Directory. Default: Same as ROOT_DIR"
+	echo "    -w: Working Directory (Relative to ROOT_DIR) Default: Same as ROOT_DIR"
 	echo "    -b: (Essential) Branch to deploy to"
 	echo "    -s: (Essential) Script to run"
 else
@@ -28,8 +28,6 @@ else
 
 	if [ "$WD" == "" ]; then
 		WD="${ROOT_DIR}";
-	else
-		WD="${PWD}/${WD}"	
 	fi
 
 	TOOL_DIR="${PWD}";
