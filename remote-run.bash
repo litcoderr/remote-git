@@ -26,6 +26,12 @@ else
 	echo Branch: $BRANCH
 	echo Script: $SCRIPT
 
+	if [ "$WD" == "" ]; then
+		WD="${ROOT_DIR}";
+	else
+		WD="${PWD}/${WD}"	
+	fi
+
 	TOOL_DIR="${PWD}";
 	cd $ROOT_DIR
 	# git pull from remote github server
@@ -34,10 +40,7 @@ else
 	echo ""
 	echo RUN: $SCRIPT
 	echo --------------------------------
-	if [ "$WD" == "" ]; then
-		WD="${ROOT_DIR}";
-	fi
-	cd $WD  # goto working directory
+	cd $WD  
 	$SCRIPT
 	cd $TOOL_DIR
 fi
