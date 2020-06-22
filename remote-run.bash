@@ -1,12 +1,14 @@
 ROOT_DIR=""
 BRANCH=""
 SCRIPT=""
+WD=""
 
 # Extract Argument
-while getopts r:b:s: flag
+while getopts r:w:b:s: flag
 do
 	case "${flag}" in
 		r) ROOT_DIR=${OPTARG};;
+		w) WD=${OPTARG};;
 		b) BRANCH=${OPTARG};;
 		s) SCRIPT=${OPTARG};;
 	esac
@@ -15,6 +17,7 @@ done
 if [ "$ROOT_DIR" == "" ] || [ "$BRANCH" == "" ] || [ "$SCRIPT" == "" ]; then
 	echo Set Arguments
 	echo "    -r: (Essential) Project root directory consisting git configuration"
+	echo "    -w: Working Directory. Default: Same as ROOT_DIR"
 	echo "    -b: (Essential) Branch to deploy to"
 	echo "    -s: (Essential) Script to run"
 else
@@ -31,6 +34,10 @@ else
 	echo ""
 	echo RUN: $SCRIPT
 	echo --------------------------------
+	if [ "$WD" == "" ]; then
+		WD="${ROOT_DIR}";
+	fi
+	cd $WD  # goto working directory
 	$SCRIPT
 	cd $TOOL_DIR
 fi
